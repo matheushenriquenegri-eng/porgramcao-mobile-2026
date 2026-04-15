@@ -7,7 +7,7 @@ class Aula01 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: Text("container"),
+        child:  Text("container"),
       ),
     );
   }
