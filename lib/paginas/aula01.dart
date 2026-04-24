@@ -6,9 +6,33 @@ class Aula01 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child:  Text("container"),
+      appBar: AppBar(
+        title: const Text("01 - Container"),
       ),
+      // Center centraliza o conteúdo
+      body: Center(
+        // Column coloca vários elementos como filhos
+        // Organiza os elementos na vertical
+        child: Column(
+          children: [
+            // Container com largura e altura
+            Container(
+              width: double.infinity, // Retorna o valor total disponível
+              height: 100,
+              color: Colors.blue,
+              child: const Center(child: Text("Primeiro conteiner"))),
+          ],
+        ),
+      ),
+      //Containercom padding e margin
+      Container(
+      padding: EdgeInsets.all(16),
+      margin: EdgeInsets.all (16),
+      color:Colors.red,
+      child:
+      Center(child: Text("Segundo container",);
+      )
+    ); 
     );
   }
 }
