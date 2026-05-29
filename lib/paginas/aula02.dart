@@ -5,10 +5,29 @@ class Aula02 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text('Aula02 - Rows e columns'),
+   double _tamanhoIcones = 40;
+
+    return Scaffold(
+      appBar: AppBar(
+      title: const Text('Aula02 - Rows e columns'),
     ),
-    body: Center(
-      child: Text("Conteúdo da aula 02"),
+    body: Conteiner(
+      width: double.infinity,
+      child: Column(
+        children: [
+          Row(
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+            Icon(Icons.home, size: _tamanhoIcones),
+            Icon(Icons.person, size: _tamanhoIcones),
+            Icon(Icons.settings, size: _tamanhoIcones),
+            ],
+          ),
+          Column(),
+          Column(),
+        ]
+      ,)
     ),
     );
   }
